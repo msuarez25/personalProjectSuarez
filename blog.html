@@ -1,0 +1,113 @@
+<!DOCTYPE html><!-- Version HTML (HTML5) -->
+<html lang="es">
+<head><!-- configuracion invisible -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#0F1116">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Mauricio Suarez</title><!-- Visible en la tab -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@100;400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3c9afaf9e1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header id="navigation">
+    <!-- Header con logo y menu de navegación -->
+    <div class="container">
+      <div class="flex">
+        <figure>
+          <a href="index.html"><img loading="lazy" src="img/logo-yellow.png" alt="Logo"></a>
+          <h1>Mauricio Suarez</h1>
+        </figure>
+        <input type="checkbox" name="mobile-menu" id="mobile-menu">
+        <label for="mobile-menu">Menú</label>
+        <nav class="flex">
+          <!-- Menu -->
+          <ul class="flex">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li>
+              <a href="proyectos.html">Proyectos <i class="fas fa-angle-down"></i>img</a>
+              <ul>
+                <li><a href="https://thisismybrave.org/" target="_blank">This is My Brave</a></li>
+                <li><a href="https://houseofruth.org/" target="_blank">House of Ruth</a></li>
+                <li><a href="https://www.run3rdalliance.com/" target="_blank">R3A</a></li>
+              </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main><!-- Seccion principal con... -->
+    <section id="blog"><!-- Seccion de blog con 4 articulos y links al detalle de cada articulo -->
+      <div class="container">
+        <h2>Blog</h2>
+        <div class="wrapper-blog">
+          <div class="box-left">
+            <div class="single-article">
+              <figure>
+                <img loading="lazy" src="img/articulo1.jpg" alt="articlulo 1">
+              </figure>
+                <div class="text-wrap">
+                  <h3>Articulo 1</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe, corporis labore laudantium blanditiis ratione perferendis omnis nobis maiores exercitationem vitae tempore quidem necessitatibus deleniti dolorum veniam. Vero, omnis minima!</p>
+                  <a href="#" class="btn dark2">Leer más</a>
+                </div>
+              </div>
+          </div>
+          <div class="box-right">
+            <div class="single-article">
+              <figure>
+                <img loading="lazy" src="img/articulo2.png" alt="articlulo 1">
+              </figure>
+              <h4>Articulo 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe, corporis labore laudantium blanditiis ratione...</p>
+              <a href="#" class="btn dark2">Leer más</a>
+            </div>
+            <div class="single-article">
+              <figure>
+                <img loading="lazy" src="img/articulo3.jpg" alt="articlulo 1">
+              </figure>
+              <h4>Articulo 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe, corporis labore laudantium blanditiis ratione...</p>
+              <a href="#" class="btn dark2">Leer más</a>
+            </div>
+            <div class="single-article">
+              <figure>
+                <img loading="lazy" src="img/articulo4.jpg" alt="articlulo 1">
+              </figure>
+              <h4>Articulo 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe, corporis labore laudantium blanditiis ratione...</p>
+              <a href="#" class="btn dark2">Leer más</a>
+            </div>
+          </div>
+        </div> 
+        <div class="link-container">
+          <a href="blog.html" class="btn dark">Ver Todos</a>
+        </div> 
+      </div>
+    </section>
+  </main>
+  <footer id="footer"><!-- Footer con copyright y redes sociales -->
+    <div class="container">
+      <ul class="redes">
+        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>   
+      </ul>
+      <span class="copyright">Mauricio Suarez 2021 © Todos los derechos resrvados.</span>
+    </div>
+  </footer>
+
+</body>
+</html> 

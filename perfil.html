@@ -1,0 +1,163 @@
+<!DOCTYPE html><!-- Version HTML (HTML5) -->
+<html lang="es">
+<head><!-- configuracion invisible -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#0F1116">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Mauricio Suarez</title><!-- Visible en la tab -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@100;400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3c9afaf9e1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header id="navigation">
+    <!-- Header con logo y menu de navegación -->
+    <div class="container">
+      <div class="flex">
+        <figure>
+          <a href="index.html"><img loading="lazy" src="img/logo-yellow.png" alt="Logo"></a>
+          <h1>Mauricio Suarez</h1>
+        </figure>
+        <input type="checkbox" name="mobile-menu" id="mobile-menu">
+        <label for="mobile-menu">Menú</label>
+        <nav class="flex">
+          <!-- Menu -->
+          <ul class="flex">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="perfil.html" class="active">Perfil</a></li>
+            <li>
+              <a href="proyectos.html">Proyectos <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="https://thisismybrave.org/" target="_blank">This is My Brave</a></li>
+                <li><a href="https://houseofruth.org/" target="_blank">House of Ruth</a></li>
+                <li><a href="https://www.run3rdalliance.com/" target="_blank">R3A</a></li>
+              </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main><!-- Seccion principal con... -->
+
+    <section id="perfil"><!-- Seccion del Perfil -->
+      <div class="container">
+        <div class="intro">
+          <div class="img-wrap">
+            <img src="img/photo_profile.jpg" alt="Mauricio Suarez profile picture">
+          </div>
+          <div class="text-wrap">
+            <h2>Mauricio Alberto Suárez Colina</h2>
+            <p>{ FullStack Web Developer }
+              <br>{ Especialista en Gestión Estratégica de Sistemas y Tecnologías de la Información }
+              <br>{ Licenciado en Administración de Empresas de Diseño } </p> 
+          </div>
+        </div>
+        <div class="wrap-text">
+          <h3>Experiencia Laboral</h3>
+          <ul>
+            <li><h4>ELEVATION - Web Solutions for Nonprofits</h4>
+              <ul>
+                <li>
+                  <h5>Development Team Leader</h5>
+                  <p><strong>Dates Employed</strong> <time>Sep 2016 – Present</time></p>
+                  <p><strong>Location</strong> Greater Buenos Aires, Argentina</p>
+                  <p>Responsible for envisioning and setting goals in the information technology department of a company.
+                  <br>Processing, storing, transmitting and protecting information in the organization.
+                  <br>Create a vision and then inspires other team members to jointly achieve them.
+                  <br>Ensures that every team member has a role to play in achieving set goals and targets.
+                  <br>To teach my mates how to cooperate in order to achieve organizational goals and targets, and also coordinates other team members.
+                  <br>Along with my team mates , we are responsible for developing websites and processes to improve the production.
+                  <br>I also coordinate the customer assistance team, defining the timely response and working on the customer service
+                  process, eliminating bottlenecks, helping to maintain and improve the process, as well as giving support to team members to resolve complex incidents.</p>
+                </li>
+                <li>
+                  <h5>FrontEnd & BackEnd Developer</h5>
+                  <p><strong>Dates Employed</strong> <time>Jul 2015 – Aug 2016</time></p>
+                  <p><strong>Location</strong> Greater Buenos Aires, Argentina</p>
+                  <p>Responsible for make the structure, styling and functionality of the websites using HTML5, CSS, SASS,
+                  JavaScript, PHP. Customize development using content management systems, mainly WordPress.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>Universidad Nueva Esparta</h4>
+              <ul>
+                <li>
+                  <h5>Professor</h5>
+                  <p><strong>Dates Employed</strong> <time>Jan 2014 – May 2015</time></p>
+                  <p><strong>Location</strong> Caracas, Federal District, Venezuela</p>
+                  <p>Responsable for coordinated and conducted classes of the matters Computer VI (animation) and computer VII (frontend web development) for advanced students.
+                  <br>Assessed and qualified students based on workshops and works made.
+                  <br>Devised better ways to teach and help students gain the knowledge necessary to successfully pass the class.
+                  <br>Reported the semester plan to the academic coordinator, with class content and detailed strategies to assess the
+                  students.
+                  <br>Reported student grades to the academic coordinator.</p>
+                </li>
+              </ul>
+              
+            </li>
+          </ul>
+          <h3>Educación</h3>
+          <ul>
+            <li><p><strong>Universidad de Buenos Aires</strong>
+            <br>Specialist's Degree in Strategic Management of Systems and Information Technologies
+            <br>Dates attended: 2019 – 2020</p>
+            </li>
+            <li><p><strong>Universidad Nueva Esparta</strong>
+            <br>Bachelor's Degree in Design Business Management (Magna Cum Laude)
+            <br>Dates attended: 2010 – 2014</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="skills"><!-- Seccion de skills (3 cajas) -->
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="wrapper">
+          <div class="single-skill">
+            <i class="fas fa-swatchbook"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus doloremque quasi necessitatibus eius dignissimos, molestiae accusantium ullam temporibus hic quam et ratione ipsum repellat distinctio optio numquam voluptate unde animi!</p>
+            <a href="#" class="btn dark">Ver más</a>
+          </div>
+          <div class="single-skill">
+            <i class="fas fa-code"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus doloremque quasi necessitatibus eius
+              dignissimos, molestiae accusantium ullam temporibus hic quam et ratione ipsum repellat distinctio optio numquam
+              voluptate unde animi!</p>
+              <a href="#" class="btn dark">Ver más</a>
+          </div>
+        <div class="single-skill">
+          <i class="fas fa-business-time"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus doloremque quasi necessitatibus eius
+            dignissimos, molestiae accusantium ullam temporibus hic quam et ratione ipsum repellat distinctio optio numquam
+            voluptate unde animi!</p>
+            <a href="#" class="btn dark">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer"><!-- Footer con copyright y redes sociales -->
+    <div class="container">
+      <ul class="redes">
+        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>   
+      </ul>
+      <span class="copyright">Mauricio Suarez 2021 © Todos los derechos resrvados.</span>
+    </div>
+  </footer>
+
+</body>
+</html> 

@@ -1,0 +1,97 @@
+<!DOCTYPE html><!-- Version HTML (HTML5) -->
+<html lang="es">
+<head><!-- configuracion invisible -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#0F1116">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Mauricio Suarez</title><!-- Visible en la tab -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@100;400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3c9afaf9e1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header id="navigation">
+    <!-- Header con logo y menu de navegación -->
+    <div class="container">
+      <div class="flex">
+        <figure>
+          <a href="index.html"><img loading="lazy" src="img/logo-yellow.png" alt="Logo"></a>
+          <h1>Mauricio Suarez</h1>
+        </figure>
+        <input type="checkbox" name="mobile-menu" id="mobile-menu">
+        <label for="mobile-menu">Menú</label>
+        <nav class="flex">
+          <!-- Menu -->
+          <ul class="flex">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li>
+              <a href="proyectos.html" class="active">Proyectos <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="https://thisismybrave.org/" target="_blank">This is My Brave</a></li>
+                <li><a href="https://houseofruth.org/" target="_blank">House of Ruth</a></li>
+                <li><a href="https://www.run3rdalliance.com/" target="_blank">R3A</a></li>
+              </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main><!-- Seccion principal con... -->
+    <section id="proyectos"><!-- Seccion de proyectos mas relevantes con links al detalle del proyecto -->
+        <h2>Proyectos</h2>
+        <div class="proyectos-wrapper">
+          <div class="single-project">
+            <a href="https://thisismybrave.org/" target="_blank">
+              <img loading="lazy" src="img/proyecto1.png" alt="proyecto 1">
+              <div class="wrapper-text">
+                <h3>This is My Brave</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, eaque.</p>
+              </div>
+            </a>
+          </div>
+          <div class="single-project">
+            <a href="https://houseofruth.org/" target="_blank">
+              <img loading="lazy" src="img/proyecto2.jpg" alt="proyecto 1">
+              <div class="wrapper-text">
+                <h3>House of Ruth</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, eaque.</p>
+              </div>
+            </a>
+          </div>
+          <div class="single-project">
+            <a href="https://www.run3rdalliance.com/" target="_blank">
+              <img loading="lazy" src="img/proyecto3.jpg" alt="proyecto 1">
+              <div class="wrapper-text">
+                <h3>R3A</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, eaque.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer id="footer"><!-- Footer con copyright y redes sociales -->
+    <div class="container">
+      <ul class="redes">
+        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>   
+      </ul>
+      <span class="copyright">Mauricio Suarez 2021 © Todos los derechos resrvados.</span>
+    </div>
+  </footer>
+
+</body>
+</html> 
