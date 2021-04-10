@@ -539,13 +539,13 @@ body{
   padding: 2.5rem 0 0;
 }
 #proyectos .proyectos-wrapper{
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  margin-top: 3rem;
+  margin-top: 3rem; */
   background-color: var(--dark);
 }
 #proyectos .single-project{
-  flex-basis: 100%;
+  /* flex-basis: 100%; */
   height: auto;
   padding-bottom: 100%;
   position: relative;
@@ -590,7 +590,7 @@ body{
 }
 @media screen and (min-width:768px){
   #proyectos .single-project{
-    flex-basis: calc(33.33%);
+    /* flex-basis: calc(33.33%); */
     padding-bottom: 33.33%;
   }
 }
