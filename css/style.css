@@ -453,23 +453,22 @@ body{
   padding:4rem 0;
   text-align:center;
 }
-#skills .wrapper{
+ /*#skills .wrapper{
   display: grid;
   width: 100%;
   grid-template-columns: 1fr;
   grid-column-gap: 4rem;
-  /* grid-template-rows: 100px 100px; */
-  grid-row-gap: 4rem;
-
-}
+  grid-template-rows: 100px 100px;
+  grid-row-gap: 4rem; 
+}*/
 #skills .single-skill i {
   font-size:4rem;
   margin-bottom:1rem;
 }
 @media screen and (min-width:768px){
   #skills .single-skill{
-    align-self: stretch;
-    position: relative;
+    /* align-self: stretch;
+    position: relative; */
     padding-bottom: 60px;
   }
   #skills .single-skill a{
@@ -478,9 +477,9 @@ body{
     left: 50%;
     transform: translateX(-50%);
   }
-  #skills .wrapper{
+  /* #skills .wrapper{
     grid-template-columns: repeat(2,1fr);
-  }
+  } */
 }
 @media screen and (min-width:1200px){
   #skills .wrapper{
