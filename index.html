@@ -193,19 +193,31 @@
       <div class="container">
         <h2>Contacto</h2>
         <form action="index.html">
-          <input name="first" id="first" type="text" placeholder="Nombre">
-          <input name="last" id="last" type="text" placeholder="Apellido">
-          <input name="email" id="email" type="email" placeholder="Email">
-          <input name="tel" id="tel" type="text" placeholder="Teléfono">
-          <input name="enviar" id="enviar" type="submit" value="enviar">
+          <div class="form-row mb-2">
+            <div class="col">
+              <input name="first" id="first" type="text" placeholder="Nombre" class="form-control">
+            </div>
+            <div class="col">
+              <input name="last" id="last" type="text" placeholder="Apellido" class="form-control">
+            </div>
+          </div>
+          <div class="form-row mb-2">
+            <div class="col">
+              <input name="email" id="email" type="email" placeholder="Email" class="form-control">
+            </div>
+            <div class="col">
+              <input name="tel" id="tel" type="text" placeholder="Teléfono" class="form-control">
+            </div>
+          </div>
+          <input name="enviar" id="enviar" type="submit" value="enviar" class="form-control">
         </form>
       </div>
     </section>
     <section id="blog"><!-- Seccion de blog con 4 articulos y links al detalle de cada articulo -->
       <div class="container">
         <h2>Blog</h2>
-        <div class="wrapper-blog">
-          <div class="box-left">
+        <div class="row wrapper-blog">
+          <div class="col-xl-6 box-left">
             <div class="single-article">
               <figure>
                 <img loading="lazy" src="img/articulo1.jpg" alt="articlulo 1">
@@ -217,7 +229,7 @@
                 </div>
               </div>
           </div>
-          <div class="box-right">
+          <div class="col-xl-6 box-right">
             <div class="single-article">
               <figure>
                 <img loading="lazy" src="img/articulo2.png" alt="articlulo 1">
