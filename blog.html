@@ -11,12 +11,11 @@
   <meta name="theme-color" content="#0F1116">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <title>Mauricio Suarez</title><!-- Visible en la tab -->
-  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@100;400;700&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/3c9afaf9e1.js" crossorigin="anonymous"></script>
-
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header id="navigation">
@@ -35,7 +34,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="perfil.html">Perfil</a></li>
             <li>
-              <a href="proyectos.html">Proyectos <i class="fas fa-angle-down"></i>img</a>
+              <a href="proyectos.html">Proyectos <i class="fas fa-angle-down"></i></a>
               <ul>
                 <li><a href="https://thisismybrave.org/" target="_blank">This is My Brave</a></li>
                 <li><a href="https://houseofruth.org/" target="_blank">House of Ruth</a></li>
@@ -53,8 +52,8 @@
     <section id="blog"><!-- Seccion de blog con 4 articulos y links al detalle de cada articulo -->
       <div class="container">
         <h2>Blog</h2>
-        <div class="wrapper-blog">
-          <div class="box-left">
+        <div class="row wrapper-blog">
+          <div class="col-xl-6 box-left">
             <div class="single-article">
               <figure>
                 <img loading="lazy" src="img/articulo1.jpg" alt="articlulo 1">
@@ -66,7 +65,7 @@
                 </div>
               </div>
           </div>
-          <div class="box-right">
+          <div class="col-xl-6 box-right">
             <div class="single-article">
               <figure>
                 <img loading="lazy" src="img/articulo2.png" alt="articlulo 1">
@@ -97,6 +96,12 @@
           <a href="blog.html" class="btn dark">Ver Todos</a>
         </div> 
       </div>
+      <svg class="divider" fill="#0F1116" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
+        style="position: absolute;bottom: -1px;left: 0;z-index: 3;">
+        <path d="M 0 14 s 88.64 3.48 300 36 c 260 40 514 27 703 -10 l 12 28 l 3 36 h -1018 z" style="opacity: 0.15;"></path>
+        <path d="M 0 45 s 271 45.13 500 32 c 157 -9 330 -47 515 -63 v 86 h -1015 z" style="opacity: 0.3;"></path>
+        <path d="M 0 58 s 188.29 32 508 32 c 290 0 494 -35 494 -35 v 45 h -1002 z"></path>
+      </svg>
     </section>
   </main>
   <footer id="footer"><!-- Footer con copyright y redes sociales -->
@@ -108,6 +113,8 @@
       <span class="copyright">Mauricio Suarez 2021 © Todos los derechos resrvados.</span>
     </div>
   </footer>
-
+  <script src="https://kit.fontawesome.com/3c9afaf9e1.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html> 

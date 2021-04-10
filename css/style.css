@@ -839,6 +839,9 @@ footer#footer ul.redes li a:hover{
   background-color: var(--dark);
   color:var(--light);
 }
+#perfil .card{
+  background-color:transparent;
+}
 #perfil h2,
 #perfil h3,
 #perfil h4,
