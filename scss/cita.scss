@@ -1,0 +1,45 @@
+/* Cita */
+#cita{
+    background-color: var(--dark);
+    color:var(--light);
+    padding: 5rem 0;
+    text-align: center;
+    position: relative;
+ .container{
+    position: relative;
+    z-index: 2;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-image: url('../img/pattern-quote.svg');
+    background-repeat: repeat;
+    background-position: center;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    /* opacity: 0.3; */
+    animation: bgAnimation 60s infinite linear;
+  }
+  i{
+    font-size: 3rem;
+    color:var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+  blockquote{
+    width:700px;
+    max-width: 100%;
+    margin:0 auto;
+    font-size: 2.8rem;
+    line-height: 1.5em;
+    font-family: var(--font2);
+  }
+  cite{
+    display: block;
+    margin-top:1rem;
+    color:var(--main-color);
+    font-style: italic;
+  }
+}

@@ -1,0 +1,25 @@
+/* Skills */
+#skills{
+    padding:4rem 0;
+    text-align:center;
+  .single-skill {
+		@media screen and (min-width:768px){ 
+			padding-bottom: 60px;
+			a{
+				position: absolute;
+				bottom:0;
+				left: 50%;
+				@include centerX(-50%);
+			}
+		}
+    i {
+			font-size:4rem;
+			margin-bottom:1rem;
+    }
+		@media screen and (min-width:1200px){
+			.wrapper{
+				grid-template-columns: repeat(3,1fr);
+			}
+		}
+	}
+}

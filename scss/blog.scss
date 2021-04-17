@@ -1,0 +1,151 @@
+/* Blog */
+#blog{
+    padding: 5rem 0 9rem;
+    background-color: var(--light);
+    position: relative;
+		&::before{
+			content: "";
+			position: absolute;
+			z-index: 1;
+			background-image: url('../img/pattern.svg');
+			background-repeat: repeat;
+			background-position: center;
+			width:100%;
+			height: 100%;
+			top:0;
+			left:0;
+			opacity: 0.3;
+			animation: bgAnimation 60s infinite linear;
+		}
+    .container{
+			position: relative;
+			z-index: 4;
+    }
+    h2{
+			text-align: center;
+			margin-bottom:4rem;
+    }
+    .wrapper-blog{
+			display: flex;
+			flex-wrap: wrap;
+    }
+    .box-left,
+    .box-right{
+			margin-bottom:2rem;
+			position:relative;
+    }
+  @media screen and (min-width:1200px){
+    .box-left,
+    .box-right{
+      margin-bottom: 0;
+    }
+    .box-left{
+      padding-right: 1rem;
+    }
+    .box-right{
+      padding-left: 1rem;
+    }
+  }
+  .box-left .single-article{
+    padding-right: 1rem;
+    position:relative;
+    height: 100%;
+  }
+  .single-article{
+    margin-bottom:2rem;
+    position: relative;
+		&:last-child{
+			margin-bottom:0;
+		}
+  }
+  .box-right {
+		.single-article{
+			&::before,
+  		&::after{
+				content: "";
+				display: table;
+			}
+		}
+	}
+  .box-left {
+		figure{
+			height: auto;
+			padding-bottom: 100%;
+			&::before{
+				content:"";
+				display: block;
+				position: absolute;
+				top:0;
+				left:0;
+				background-color: var(--dark);
+				z-index: 1;
+				width:100%;
+				height:100%;
+				opacity: 0.6;
+			}
+			img{
+			 position:absolute;
+			 width: 100%;
+			 height: 100%;
+			 object-position: center;
+			 object-fit: cover;
+			 top:0;
+			 left:0;
+		 }
+		}
+		 .text-wrap{
+			 position:absolute;
+			 bottom:0;
+			 padding: 2rem;
+			 z-index: 2;
+		 }
+		 h3{
+			 color:var(--main-color);
+		 }
+		 p{
+			 color:var(--light);
+		 }
+		
+	}
+  .box-right {
+		.single-article{
+			&::after{
+    		clear: both;
+			}
+			figure{
+				width:100%;
+				padding-bottom:100%;
+				position:relative;
+				margin-bottom: 1rem;
+				@media screen and (min-width:575px){
+					width:180px;
+					padding-bottom:180px;
+					float: left;
+					margin-right:1rem;
+					margin-bottom:0;
+				}
+				img{
+					position:absolute;
+					left:0;
+					top:0;
+					height: 100%;
+					width:100%;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+		}
+		h4{
+		 	font-size:1.5rem;
+	 	}
+	}
+  .link-container{
+    text-align: center;
+    padding: 4rem 0 0; 
+  }
+}
+@keyframes bgAnimation {
+	100%{
+	 	background-position:-300vw 300vh;
+ 	}
+}

@@ -1,0 +1,48 @@
+/* Perfil */
+#perfil{
+    padding: 50px 0;
+    background-color: var(--dark);
+    color:var(--light);
+  .card{
+    background-color:transparent;
+  }
+  h2,
+  h3,
+  h4,
+  h5{
+    color:var(--main-color);
+  }
+  .intro{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+		.img-wrap{
+			position: relative;
+			width:200px;
+			height:200px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin-right:30px;
+		}
+		.img-wrap img{
+			position: absolute;
+			top:50%;
+			left:50%;
+			@include center(-47%,-43%);
+			max-width: 120%;
+		}
+		.text-wrap{
+			font-style: italic;
+		}
+		@media screen and (min-width:992px){
+			flex-direction: row;
+			.text-wrap{
+				width:calc(100% - 230px);
+			}
+		}
+	}
+  ul{
+    padding-left: 30px;
+  }
+}

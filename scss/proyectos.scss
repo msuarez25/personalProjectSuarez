@@ -1,0 +1,59 @@
+$width: 100%;
+/* Proyectos */
+#proyectos{
+	background-color: var(--light);
+	color:var(--dark);
+	padding: 2.5rem 0 0;
+  .proyectos-wrapper{
+    background-color: var(--dark);
+    .single-project{
+      height: auto;
+      padding-bottom: 100%;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      @media screen and (min-width:768px){
+        padding-bottom: $width / 3;
+      }
+			h3{
+				color:var(--main-color);
+			}
+			a{
+				position: absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				color:var(--light);
+			}
+			.wrapper-text{
+				position: absolute;
+				top:200%;
+				@include center(-50%,-50%);
+				left:50%;
+				transition:var(--transition-time);
+				z-index: 3;
+			}
+			img{
+				position: absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				opacity: 1;
+				transition: var(--transition-time);
+			}
+			&:hover img{
+				opacity: 0.3;
+			}
+			&:hover .wrapper-text{
+				top:50%;
+			}
+    }
+	}
+  h2{
+    text-align: center;
+  }
+}  
