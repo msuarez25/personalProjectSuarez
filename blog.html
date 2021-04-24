@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="keywords" content="Blog, Mauricio, Suarez, Web, Wordpress, HTML, CSS, JS, Proyectos, SEO, Websites, Sitios Web, Calidad, Precio, barato">
+  <meta name="description" content="Web personal de Mauricio Suarez, esta es la seccion del Blog con articulos de interes.">
+
+  <meta property="og:title" content="Mauricio Suarez | Blog">
+  <meta property="og:description" content="Web personal de Mauricio Suarez, esta es la seccion del Blog con articulos de interes.">
+  <meta property="og:image" content="img/photo_profile.jpg">
+  <meta property="og:url" content="blog.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta property="og:site_name" content="Mauricio Suarez | Blog">
+  <meta name="twitter:image:alt" content="Mauricio Suarez Profile Picture">
+
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -24,7 +37,7 @@
       <div class="flex">
         <figure>
           <a href="index.html"><img loading="lazy" src="img/logo-yellow.png" alt="Logo"></a>
-          <h1>Mauricio Suarez</h1>
+          <p class="sr-only">Mauricio Suarez</p>
         </figure>
         <input type="checkbox" name="mobile-menu" id="mobile-menu">
         <label for="mobile-menu">Menú</label>
@@ -49,9 +62,17 @@
     </div>
   </header>
   <main><!-- Seccion principal con... -->
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+    </div>
     <section id="blog"><!-- Seccion de blog con 4 articulos y links al detalle de cada articulo -->
       <div class="container">
-        <h2>Blog</h2>
+        <h1>Blog</h1>
         <div class="row wrapper-blog">
           <div class="col-xl-6 box-left">
             <div class="single-article">
